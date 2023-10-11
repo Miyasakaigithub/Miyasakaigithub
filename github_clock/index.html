@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="clockBody">
+        <div class="WeekDays">
+            <span id="sat">sat</span>
+            <span id="sun">sun</span>
+            <span id="mon">mon</span>
+            <span id="tue">tue</span>
+            <span id="wed">wed</span>
+            <span id="thu">thu</span>
+            <span id="fri">fri</span>
+        </div>
+        <div class="timeHolder">
+            <div class="timeOptions">
+                <i class="fa-solid fa-clock" data-title="Time"></i>
+                <i class="fa-solid fa-stopwatch" data-title="StopWatch"></i>
+                <i class="fa-regular fa-clock" data-title="CuntDown"></i>
+            </div>
+            <div class="numbers">
+                <div class="H1">
+                    <span class="d1"></span>
+                    <span class="d2"></span>
+                    <span class="d3"></span>
+                    <span class="d4"></span>
+                    <span class="d5"></span>
+                    <span class="d6"></span>
+                    <span class="d7"></span>
+                </div>
+                <div class="H2">
+                    <span class="d1"></span>
+                    <span class="d2"></span>
+                    <span class="d3"></span>
+                    <span class="d4"></span>
+                    <span class="d5"></span>
+                    <span class="d6"></span>
+                    <span class="d7"></span>
+                </div>
+                <span>:</span>
+
+                <div class="M1">
+                    <span class="d1"></span>
+                    <span class="d2"></span>
+                    <span class="d3"></span>
+                    <span class="d4"></span>
+                    <span class="d5"></span>
+                    <span class="d6"></span>
+                    <span class="d7"></span>
+                </div>
+                <div class="M2">
+                    <span class="d1"></span>
+                    <span class="d2"></span>
+                    <span class="d3"></span>
+                    <span class="d4"></span>
+                    <span class="d5"></span>
+                    <span class="d6"></span>
+                    <span class="d7"></span>
+                </div>
+                <span>:</span>
+                <div class="S1">
+                    <span class="d1"></span>
+                    <span class="d2"></span>
+                    <span class="d3"></span>
+                    <span class="d4"></span>
+                    <span class="d5"></span>
+                    <span class="d6"></span>
+                    <span class="d7"></span>
+                </div>
+                <div class="S2">
+                    <span class="d1"></span>
+                    <span class="d2"></span>
+                    <span class="d3"></span>
+                    <span class="d4"></span>
+                    <span class="d5"></span>
+                    <span class="d6"></span>
+                    <span class="d7"></span>
+                </div>
+            </div>
+
+            <div class="countDown">
+                <input type="number" name="" id="" placeholder="Enter Seconds">
+            </div>
+
+            <div class="TimeFormat">
+                <div class="Type">
+                    <span>12hr</span>
+                    <span class="active">24hr</span>
+                </div>
+                <div class="Formats">
+                    <span>am</span>
+                    <span>pm</span>
+                </div>
+                <div class="control">
+                    <span class="start active"><i class="fa-solid fa-play"></i>Start</span>
+                    <span class="pause"><i class="fa-solid fa-pause"></i>Pause</span>
+                    <span class="stop active"><i class="fa-solid fa-stop"></i>Stop</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
